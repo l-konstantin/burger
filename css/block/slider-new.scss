@@ -1,0 +1,271 @@
+.slider_burg{
+	width: 100%;
+	max-height: 650px;
+	position: relative;
+	background: url("../icon/contents/iconburger.png") no-repeat;
+	background-size: cover;
+	padding: 0;
+	@include tablets{
+		max-height: 1000px;
+	}
+}
+.slider_burginia{
+	width: 1100px;
+	height: 100%;
+	margin: 0 auto;
+	@include desktop{
+		width: 97%;
+	}
+}
+.sliders_title{
+	
+}
+.slider {
+	position: relative;
+    overflow: hidden;
+}
+.slider__wrapper {
+	display: flex;
+    transition: transform 0.6s ease;
+}
+.slider__item {
+	flex: 0 0 100%;
+    max-width: 100%;
+}
+.slider__control {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    text-align: center;
+    height: 50px;
+    transform: translateY(-100%);
+}
+.slider__control:hover,
+.slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+}
+.slider__control_left {
+    left: 0;
+}
+.slider__control_right {
+    right: 0;
+}
+.slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+.burg_slider_block{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	@include tablets{
+		flex-direction: column;
+	}
+}
+.burg_slider_title-1{
+	width: 460px;
+	display: flex;
+	height: 100%;
+	align-items: center;
+	@include tablets{
+		width: 90%;
+		flex-direction: column;
+	}
+}
+.burg_slider_title-2{
+	width: 460px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	@include tablets{
+		width: 80%;
+		align-items: center;
+	}
+	@include phones{
+		width: 90%;
+	}
+}
+.burg_slider_icon_block{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	@include tablets{
+		flex-direction: row;
+		width: 90%;
+		align-items: center;
+		height: 150px;
+		margin-top: 60px;
+	}
+	@include phones{
+		margin: 0;
+	}
+}
+.burg_slider_icons{
+	border-radius: 6px;
+	margin-top: 90px;
+	@include tablets{
+		margin: 0;
+	}
+}
+.burg_slider_icons_svg{
+	padding-bottom: 90px;
+	@include tablets{
+		padding: 0;
+	}
+}
+.burg_slider_photo_block-1{
+	background: url("../icon/burgers/1.png") left center no-repeat;
+	background-size: cover;
+	width: 472px;
+	height: 319px;
+	margin-top: 36px;
+	margin-left: -117px;
+	@include tablets{
+		margin: 0;
+	}
+	@include phones{
+		width: 334px;
+		height: 219px;
+	}
+}
+.burg_slider_photo_block-2{
+	background: url("../icon/burgers/2.png") left center no-repeat;
+	background-size: cover;
+	width: 487px;
+	height: 259px;
+	margin-left: -119px;
+	@include tablets{
+		margin: 0;
+	}
+	@include phones{
+		width: 321px;
+		height: 170px;
+	}
+}
+.burg_slider_photo_block-3{
+	background: url("../icon/burgers/3.png") left center no-repeat;
+	background-size: cover;
+	width: 435px;
+	height: 279px;
+	margin-left: -100px;
+	@include tablets{
+		margin: 0;
+	}
+	@include phones{
+		width: 292px;
+		height: 184px;
+	}
+}
+.burg_slider_photo_block-4{
+	background: url("../icon/burgers/4.png") left center no-repeat;
+	background-size: cover;
+	width: 440px;
+	height: 412px;
+	margin-left: -117px;
+	@include tablets{
+		margin: -80px 0 0;
+	}
+	@include phones{
+		width: 328px;
+		height: 316px;
+		margin: -40px 0 0;
+	}
+}
+.burg_slider_text_h2{
+	@include gagalin();
+	color: #ffffff;
+	font-size: rem(72px);
+	margin: 140px 0 55px 0;
+	line-height: 1;
+	@include tablets{
+		margin: 0;
+		text-align: center;
+	}
+	@include phones{
+		font-size: 50px;
+	}
+}
+.burg_slider_text_p{
+	@include ubuntu(light);
+	font-size: rem(16px);
+	line-height: 1.7em;
+	color: white;
+	margin: 0;
+	@include tablets{
+		text-align: center;
+		margin: 50px 0;
+	}
+	@include phones{
+		margin: 30px 0;
+	}
+}
+.burg_slider_pay{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	@include tablets{
+		height: 100px;
+		justify-content: center;
+		align-items: center;
+	}
+	@include phones{
+		flex-direction: column;
+		height: 130px;
+	}
+}
+.burg_slider_pay_number{
+	@include gagalin();	
+	color: red;
+	font-size: rem(56px);
+	margin: 40px 0 140px 0;
+	@include tablets{
+		margin: 0;
+	}
+	@include phones{
+		font-size: 43px;
+		margin: 10px 0;
+	}
+}
+.burg_slider_pay_number b{
+	@include gagalin();	
+	color: red;
+	font-size: rem(20px);
+}
+.burg_slider_button{
+	@include ubuntu(light);
+	display: flex;
+	width: rem(100px);
+	height: rem(35px);
+	border-radius: rem(7px);
+	font-size: rem(16px);
+	background: red;
+	color: white;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 0 150px 30px;
+	@include tablets{
+		margin: 14px 0 0 30px;
+	}
+	@include phones{
+		margin: 0;
+	}
+}
+.burger_flag-scroll-icon{
+	transform: rotate(90deg);
+}
+.burger_flagg-scroll-icon{
+	transform: rotate(-90deg);
+}

@@ -1,0 +1,24 @@
+$desktop: 1300px;
+$tablets: 768px;
+$phones: 480px;
+
+//media
+@import "mix/media.scss";
+
+//font
+@import "font/fonts.scss";
+
+//blocks
+@import "block/hero.scss";
+@import "block/burger-menu.scss";
+@import "block/best.scss";
+@import "block/team.scss";
+@import "block/menu.scss";
+@import "block/reviews.scss";
+@import "block/wework.scss";
+@import "block/order.scss";
+@import "block/map.scss";
+@import "block/stylemap.scss";
+@import "block/full-review.scss";
+@import "block/slider-new.scss";
+

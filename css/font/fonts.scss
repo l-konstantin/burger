@@ -1,0 +1,56 @@
+@font-face {
+	font-family: 'Gagalin-Regular';
+	src: url('font/fonts/Gagalin/Gagalin-Regular.otf') format('otf'),
+	url('font/fonts/Gagalin/Gagalin-Regular.woff') format('woff'),
+	url('font/fonts/Gagalin/gagalin.ttf') format('ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Lifehack-Medium';
+	src: url('font/fonts/Lifehack Medium.otf') format('otf'),
+	url('font/fonts/Lifehack-Medium.ttf') format('ttf'),
+	url('font/fonts/Lifehack-Medium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal; 
+}
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('font/fonts/Ubuntu/Ubuntu-Light.ttf') format('ttf');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('font/fonts/Ubuntu/Ubuntu-Medium.ttf') format('ttf');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('font/fonts/Ubuntu/Ubuntu-B.ttf') format('ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+@mixin gagalin() {
+	font-family: 'Gagalin-Regular', Helvetia, sans-serif;
+}
+@mixin medium() {
+	font-family: 'Lifehack-Medium', Helvetia, sans-serif;
+}
+@mixin ubuntu($style: light) {
+	font-family: 'Ubuntu', Helvetica, sans-serif;
+	
+	@if $style == light {
+		font-weight: 300;
+	}
+	@if $style == medium {
+		font-weight: 500;
+	}
+	@if $style == bold {
+		font-weight: bold;
+	}
+}
+@mixin lifehack() {
+	font-family: 'Lifehack-Medium';
+}

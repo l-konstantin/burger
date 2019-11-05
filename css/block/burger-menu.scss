@@ -1,0 +1,98 @@
+.burg_menu{
+	position: absolute;
+	display: none;
+	width: 100%;
+	top: 0;
+	@include tablets{
+		display: flex;
+		position: absolute;
+	}
+}
+.menu-block{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	overflow: hidden;
+	width: 100%;
+}
+.menu-nav {
+	background-color: #000;
+	height: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	transition: 0.5s;
+	transform-origin: left center;
+	transform: translateY(-20%);
+	opacity: 0;
+}
+.burg_menu-btn {
+	display: block;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	position: absolute;	
+	top: 26px;
+	right: 23px;
+}
+.burg_menu-btn span,
+.burg_menu-btn span::before,
+.burg_menu-btn span::after{
+	position: absolute;
+	top: 50%;
+	margin-top: -2px;
+	left: 50%;
+	margin-left: -15px;
+	width: 30px;
+	height: 4px;
+	background-color: #ffffff;
+} 
+.burg_menu-btn span::before,
+.burg_menu-btn span::after{
+	content: "";
+	display: block;
+	transition: 0.5s;
+}
+.burg_menu-btn span::before {
+	transform: translateY(-8px);
+}
+.burg_menu-btn span::after {
+	transform: translateY(8px);
+}
+.burg_menu-btn_active span {
+	height: 0;
+}
+.burg_menu-btn_active span:before {
+	transform: rotate(45deg);
+}
+.burg_menu-btn_active span:after {
+	transform: rotate(-45deg);
+}
+.menu-nav_link {
+	@include ubuntu(light);
+	font-size: 16px;
+	text-decoration: none;
+	color: #ffffff;
+	margin: 10px auto;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu-nav_link:hover{
+	color: #f9b43b;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.menu-nav_active {
+	transform: translateX(0%);
+	height: 269px;
+	opacity: 1;
+}

@@ -1,0 +1,37 @@
+.map {
+	height: 100vh;
+	width: 100%;
+}
+.map__hint {
+	@include ubuntu(light);
+	padding: 20px;
+	min-height: 20px;
+	min-width: 195px;
+	font-size: 16px;
+	line-height: 1;
+	color: #ffffff;
+	background-color: red;
+	border-radius: 10px;
+	display: flex;	
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+}
+.map__balloon {
+	@include ubuntu(light);
+	padding: 20px;
+	font-size: 20px;
+	line-height: 1;
+	color: #ffffff;
+	background-color: #f9b43b;
+	border-radius: 20px;
+	display: flex;	
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+}
+.map__burger-img {
+	float: right;
+	height: 100px;
+	width: 100px;
+}

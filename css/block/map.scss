@@ -1,0 +1,122 @@
+.mapp {
+	height: 100vh;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	padding: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.container_map{
+	width: 100%;
+	height: 100vh;
+	min-height: 650px;
+	position: relative;
+}
+.map_block {
+	width: 100%;
+	position: absolute;
+	@include tablets{
+		width: 100%;
+		height: auto;
+	}
+}
+.footer {
+	background: url("../icon/contents/footer-line.jpg") no-repeat;
+	background-size: cover;
+	height: 60px;
+	width: 100%;
+	position: absolute;
+	bottom: -7px;
+	@include phones {
+		height: 120px;
+	}
+}
+.footer_container {
+  display: flex;
+  @include phones {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  }
+}
+.footer__col {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  @include phones{
+		widht: 80%;
+		text-align: center;
+		margin-top: 3%;
+		margin-left: -11%;
+	}
+}
+.footer_contact {
+	@include phones {
+		padding-top: 10px;
+	}
+}
+.contact_text-adress {
+  	@include ubuntu(light);
+	padding: 10px;
+	font-size: 14px;
+	line-height: 1;
+	color: #ffffff;
+	margin-left: 50px;
+	@include phones{
+		width: auto;
+		padding: 0;
+	}
+}
+.contact_telephon-image {
+	background: url("../icon/icons/phone.svg") no-repeat;
+	background-size: cover;
+	height: 15px;
+  	width: 15px;
+  	margin-left: 15%;
+	color: red;
+	position: absolute;
+	@include phones{
+		font-size: 12px;
+	}
+}
+.contact_item-telephon {
+  	text-decoration: none;
+  	@include ubuntu(light);
+	padding-bottom: 15px;
+	font-size: 14px;
+	line-height: 1;
+	color: red;
+	margin-left: 15%;
+	@include phones{
+		font-size: 12px;
+	}
+}
+.contact_icon {
+ 	height: 60px;
+  	width: 65%;
+  	display: flex;
+  	justify-content: flex-end;
+	margin-left: 100px;
+	@include desktop{
+		margin: 0;
+	}
+	@include tablets{
+		width: 50%;
+	}
+	@include phones{
+		width: auto;
+		margin-left: 0;
+	}
+}
+.contact_icon-image {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 10px 10px;
+  }
+.image_twit{
+	margin-top: 7px;
+}
