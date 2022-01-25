@@ -15,6 +15,6 @@
 |                          |                                                        |
 | Ссылка на репозиторий    | https://github.com/l-konstantin/burger/                |
 |                          |                                                        |
-| Ссылка на рабочий сайт   | https://newsite-test.ru/burger/index.html              |
+| Ссылка на рабочий сайт   | https://newsitetest.ru/burger/index.html               |
 |                          |                                                        |
 | Примечание               |                                                        |
